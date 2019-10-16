@@ -1,0 +1,181 @@
+/*Selector universal*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*Selector de etiqueta*/
+body{
+  background-color: #000;
+  color: #EEE;
+}
+/**********************************************************************/
+/*Header*/
+body header{
+  width: 100%;
+  height: 700px;
+  background-image: url("img/portada.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+/*Navegacion*/
+body header nav{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgb(27, 27, 27);
+}
+body header nav ul{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+}
+body header nav ul li{
+  width: 25%;
+  float: left;
+  height: 40%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  list-style: none;
+  letter-spacing: 2px;
+}
+body header nav ul li a{
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #FFF;
+}
+/*Efecto hover*/
+body header nav ul li a:hover{
+  color: rgb(197, 207, 12);
+}
+/*Titulo de la pelicula*/
+body header h1{
+  width: 100%;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  font-size: 5em;
+  color: rgb(197, 207, 12);
+  -webkit-text-stroke:1px #000;
+}
+/*Sinopsis*/
+body header p{
+  width: 80%;
+  padding: 5%;
+  position: relative;
+  left: 5%;
+  top: 250px;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+body header p::first-letter{
+  color: rgb(197, 207, 12);
+  font-size: 1.4em;
+}
+/*********************************************************************/
+/*Seccion GENERAL*/
+body section{
+  width: 90%;
+  height: auto;
+  padding: 5%;
+}
+/*Titulo de la sección | GENERAL*/
+body section h2{
+  font-size: 4em;
+  padding: 20px 5px;
+  color: rgb(197, 207, 12);
+  -webkit-text-stroke:1px #000;
+}
+/*Personaje*/
+body #personajes .personaje{
+  width: 90%;
+  height: 205px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid rgb(14, 14, 14);
+}
+body #personajes .personaje img{
+  width: 300px;
+  height: 200px;
+  float: left;
+  border-radius: 10px;
+}
+body #personajes .personaje div{
+  width: 60%;
+  float: left;
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+body #personajes .personaje div h3{
+  font-size: 3em;
+  color: rgb(197, 207, 12);
+}
+body #personajes .personaje div p{
+  font-size: 1.3em;
+}
+/*************************************************************************/
+/*Imagen intermedia*/
+body #imagen-inter{
+  width: 100%;
+  height: 400px;
+  background-image: url("img/img.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+/*************************************************************************/
+/*Actores y actrices*/
+body #actores #container{
+  width: 70%;
+  height: 300px;
+  padding: 2%;
+  margin: 0px auto;
+  border: 1px solid #666363;
+}
+body #actores #container .actor{
+  width: 25%;
+  height: 95%;
+  float: left;
+  margin-left: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(14, 14, 14);
+}
+body #actores #container .actor img{
+  width: 100%;
+  height: 90%;
+}
+/*****************FOOTER*********************/
+body footer{
+  width: 100%;
+  height: 100px;
+}
+body footer a{
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(61, 116, 209);
+  position: relative;
+  top: 40px;
+  left: 510px;
+}
+body footer a:first-of-type {
+  background-color: rgb(5, 58, 148);
+}
+body footer a:last-of-type{
+  background-color: rgb(158, 71, 147);
+}
+body footer a:hover{
+  background-color: #000;
+  border: 1px solid rgb(14, 14, 14);
+}
